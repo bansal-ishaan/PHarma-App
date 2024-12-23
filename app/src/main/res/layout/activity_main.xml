@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:gravity="center"
+    android:background="#FFFFFF"
+    >
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="150dp"
+
+        android:layout_height="150dp"
+        app:srcCompat="@drawable/logo" />
+
+    <TextView
+        android:id="@+id/pharmText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="PHarm"
+        android:fontFamily="sans-serif"
+        android:textColor="#009688"
+        android:textSize="70sp"
+        android:textStyle="bold"
+        >
+
+
+    </TextView>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Your Medicine Companion!!"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:textColor="#4DB6AC"
+>
+
+    </TextView>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:gravity="center"
+        android:textSize="25sp"
+        android:text="Never miss a medicine again.
+
+
+
+
+         Your personal medication reminder."
+
+        android:textStyle="bold"
+        android:textColor="#616161"
+        >
+    </TextView>
+
+    <com.google.android.material.button.MaterialButton
+        android:layout_width="match_parent"
+        android:id="@+id/btn_signup"
+        android:layout_height="80dp"
+       android:layout_marginTop="50dp"
+
+        android:backgroundTint="#009688"
+        app:strokeWidth="6dp"
+        app:strokeColor="@color/white"
+        app:cornerRadius="50dp"
+        android:text="Get started"
+        android:textColor="@color/white"
+        android:textSize="35dp"
+        android:gravity="center"
+
+        >
+
+    </com.google.android.material.button.MaterialButton>
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:id="@+id/btn"
+    android:text="Already have an account? SignIn"
+    android:textColor="#008EFF"
+    >
+
+
+</TextView>
+
+</LinearLayout>

@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:gravity="center"
+    android:background="#FFFFFF">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        app:srcCompat="@drawable/logo" />
+    <TextView
+        android:id="@+id/pharmText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="PHarm"
+        android:fontFamily="sans-serif"
+        android:textColor="#009688"
+        android:textSize="70sp"
+        android:textStyle="bold"
+        >
+
+
+    </TextView>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Your Medicine Companion!!"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:textColor="#4DB6AC"
+        >
+
+    </TextView>
+
+    <EditText
+        android:id="@+id/editTextTextEmailAddress"
+        android:layout_width="match_parent"
+        android:layout_margin="10dp"
+        android:layout_height="wrap_content"
+        android:hint="Email ID"
+        android:inputType="textEmailAddress" />
+
+
+    <EditText
+        android:id="@+id/editTextTextPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Password"
+        android:layout_margin="10dp"
+        android:inputType="textPassword" />
+    <com.google.android.material.button.MaterialButton
+        android:layout_width="200dp"
+        android:id="@+id/btn_login"
+        android:layout_height="80dp"
+        android:layout_marginTop="10dp"
+
+        android:backgroundTint="#009688"
+        app:strokeWidth="6dp"
+        app:strokeColor="@color/white"
+        app:cornerRadius="50dp"
+        android:text="Sign In"
+        android:textColor="@color/white"
+        android:textSize="30dp"
+        android:gravity="center"
+
+        >
+
+    </com.google.android.material.button.MaterialButton>
+
+
+
+
+</LinearLayout>
