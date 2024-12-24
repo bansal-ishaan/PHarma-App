@@ -4,15 +4,16 @@
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-
+    android:id="@+id/main"
     android:gravity="center"
-    android:background="#FFFFFF">
+    android:background="@drawable/background_gradient">
 
     <ImageView
         android:id="@+id/imageView"
-        android:layout_width="150dp"
-        android:layout_height="150dp"
+        android:layout_width="170dp"
+        android:layout_height="170dp"
         app:srcCompat="@drawable/logo" />
+
     <TextView
         android:id="@+id/pharmText"
         android:layout_width="wrap_content"
@@ -21,58 +22,56 @@
         android:fontFamily="sans-serif"
         android:textColor="#009688"
         android:textSize="70sp"
-        android:textStyle="bold"
-        >
+        android:textStyle="bold" />
 
-
-    </TextView>
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Your Medicine Companion!!"
         android:textStyle="bold"
         android:textSize="18sp"
-        android:textColor="#4DB6AC"
-        >
-
-    </TextView>
+        android:textColor="#4DB6AC" />
 
     <EditText
         android:id="@+id/editTextTextEmailAddress"
         android:layout_width="match_parent"
-        android:layout_margin="10dp"
         android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:padding="11dp"
+        android:background="@drawable/edittext_border"
         android:hint="Email ID"
         android:inputType="textEmailAddress" />
-
 
     <EditText
         android:id="@+id/editTextTextPassword"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="Password"
+        android:padding="11dp"
+        android:background="@drawable/edittext_border"
         android:layout_margin="10dp"
         android:inputType="textPassword" />
+
+    <!-- Show Password CheckBox -->
+    <CheckBox
+        android:id="@+id/showPasswordCheckbox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Show Password"
+        android:layout_marginTop="8dp"
+        android:layout_gravity="center_horizontal" />
+
     <com.google.android.material.button.MaterialButton
         android:layout_width="200dp"
         android:id="@+id/btn_login"
         android:layout_height="80dp"
         android:layout_marginTop="10dp"
-
         android:backgroundTint="#009688"
-        app:strokeWidth="6dp"
-        app:strokeColor="@color/white"
+
         app:cornerRadius="50dp"
-        android:text="Sign In"
+        android:text="Log In"
         android:textColor="@color/white"
-        android:textSize="30dp"
-        android:gravity="center"
-
-        >
-
-    </com.google.android.material.button.MaterialButton>
-
-
-
+        android:textSize="33dp"
+        android:gravity="center" />
 
 </LinearLayout>
